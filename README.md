@@ -2,7 +2,26 @@
 
 The express-rollup-template is a basic scaffold for a web server project that supports both Server API and client side web app capabilities. The template comes preconfigured with livereload and nodemon for automatically reloading the web app in the browser whenever changes are made to either client side or server side code. Additionally, the project comes preconfigured with Babel, Rollup, and Postcss for the client side app so that ES6 modules can be bundled into a single file.
 
-This project should be used as a starter and can be configured and customized to your liking. The project follows a standard structure detailed below.
+This project should be used as a starter and can be configured and customized to your liking.
+
+## Install
+
+To get started with this template, follow the instructions below. Some guidance is provided assuming the use of VS Code.
+
+Dependencies:
+1. [VS Code][4]
+3. [Docker][5] or [NodeJS][6]
+
+1. Copy this repository's URL: https://github.com/tltoulson/express-rollup-template.git
+2. [Clone the repository][3]
+3. Open the express-rollup-template folder in the VS Code terminal, options include
+    - Right click on the folder name in VS Code
+    - Open a new terminal and use the cd command to change the working directory
+4. Start the server either through a Docker Container or directly on your computer through NodeJS
+    - Docker Terminal Command: `docker-compose up --build`
+    - NodeJS Terminal Command: `npm install && npm run dev`
+5. Navigate to http://localhost:1313 (assuming you did not make changes to the template)
+6. Get Building!
 
 ## Folder Structure
 
@@ -21,3 +40,7 @@ The public folder contains any static assets (CSS, JS, Images, Fonts, Etc) that 
 
 [1]: https://expressjs.com/en/guide/routing.html
 [2]: https://rollupjs.org/guide/en/#configuration-files
+[3]: https://code.visualstudio.com/docs/editor/github#_cloning-a-repository
+[4]: https://code.visualstudio.com/download
+[5]: https://docs.docker.com/get-docker/
+[6]: https://nodejs.org/en/download/
