@@ -91,13 +91,18 @@ if (process.env.NODE_ENV == 'development') {
   let reloadServer = livereload.createServer({
     'port': process.env.LIVERELOAD_PORT
   });
+
+  let watchPaths = [
+    __dirname + '/public',
+    __dirname + '/api'
+  ]
   
-  reloadServer.watch(__dirname + '/public');
+  reloadServer.watch(watchPaths);
 
   reloadServer.server.once('connection', function() {
     setTimeout(function() {
       reloadServer.refresh("/");
-    }, 0);
+    }, 100);
   });
 }
 
